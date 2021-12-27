@@ -30,7 +30,12 @@ namespace ShopApp.Business.Concrete
 
         public List<Product> GetAll()
         {
-            return _productDal.GetAll().ToList();
+            return _productDal.GetAll();
+        }
+
+        public List<Product> GetPopularProducts()
+        {
+            return _productDal.GetAll();
         }
 
         public Product GetById(int id)
